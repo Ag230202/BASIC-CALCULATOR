@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.Math;
 
 public class calculator1 {
 
@@ -54,6 +55,13 @@ public class calculator1 {
 				double rem=num1%num2;
 				System.out.println(num1 +" "+ sym+" "+num2+"="+rem);
 			}
+			else if (sym=='^')
+			{
+				double pow= Math.pow(num1, num2);
+				System.out.println(num1 +" "+ sym+" "+num2+"="+pow);
+			}
+			
+	
 			else {
 				System.out.println("Wrong input or symbol");
 			}
